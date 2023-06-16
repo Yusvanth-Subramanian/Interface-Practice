@@ -2,7 +2,11 @@
 public class Main {
     public static void main(String[] args) {
 
+        // Lambda Expression
         greet(message -> System.out.println("Hello World!!!"));
+
+        // Method reference
+        greet(System.out::println);
 
         greet(new Printer() {
             @Override
