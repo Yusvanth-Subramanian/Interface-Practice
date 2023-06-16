@@ -2,6 +2,8 @@
 public class Main {
     public static void main(String[] args) {
 
+        greet(message -> System.out.println("Hello World!!!"));
+
         greet(new Printer() {
             @Override
             public void print(String message) {
